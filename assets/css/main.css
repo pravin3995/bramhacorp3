@@ -1,0 +1,763 @@
+/*
+font-family: 'Roboto', sans-serif;
+*/
+
+/* Common css start here
+   ========================================================================== */
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url("../fonts/HankenGrotesk-Regular.otf");
+}
+@font-face {
+  font-family: "HankenGrotesk-semibold";
+  src: url("../fonts/HankenGrotesk-SemiBold.otf");
+}
+@font-face {
+  font-family: "HankenGrotesk-Medium";
+  src: url("../fonts/HankenGrotesk-Medium.otf");
+}
+@font-face {
+  font-family: "HankenGrotesk-bold";
+  src: url("../fonts/HankenGrotesk-Bold.otf");
+}
+*{
+  text-decoration: none;
+}
+html{
+  font-size: 16px;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+ul li{
+  display: inline-block;
+}
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding:0 15px;
+}
+img{
+  width: 100%;
+}
+/* ==========================================================================
+   Header css start here
+   ========================================================================== */
+.navbar{
+  padding: 1.5625rem 0.625rem;
+}
+.navbar-collapse{
+  justify-content: flex-end;
+}
+.nav-item a{
+  color:#4D4D4F;
+}
+.nav-item a:hover{
+  color:#B82831;
+}
+.active a{
+  color:#B82831;
+}
+
+/* ==========================================================================
+   About infromation css start here
+   ========================================================================== */
+.about-us-info .title{
+  color: #384146;
+  font-size: 3rem;
+  padding-bottom: 0.8rem;
+
+}
+.about-us-text{
+  color: #575858;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+.banner-wrap{
+  padding: 0;
+}
+.banner-wrap .row{
+  margin-right:0;
+}
+.banner-wrap .row div:nth-child(2){
+  padding-right:0;
+}
+.feature{
+  padding-bottom: 2rem;
+}
+.feature-heading{
+  color:#B82831;
+  font-size: 1.2rem;
+  margin: 0;
+  font-size: 500;
+}
+.feature hr{
+  background: #B82831;
+  width: 8%;
+  height: 2px;
+  margin-top: 0.7rem;
+  margin-left: 0;
+}
+.feature-text{
+  color: #575858;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+.feature-text span{
+  display: block;
+  margin: 0 0 1rem 0;
+}
+/* ==========================================================================
+   Our Legacy css start here
+   ========================================================================== */
+
+.our-legacy-wrap .title{
+  color: #384146;
+  font-size: 2.2rem;
+  padding-bottom: 0.8rem;
+  text-align: center;
+  font-size: 700;
+}
+:focus {
+  outline: none;
+}
+button {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+}
+article {
+  background-color: #c1c1c1;
+  padding: 50px 0;
+  margin: 20px auto;
+  max-width: 999px;
+  width: 100%;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slick {
+  position: relative;
+  overflow: hidden;
+  .item {
+    float: left;
+    background-color: green;
+    text-align: center;
+    .no-slide& {
+    }
+    &.slick-current {
+    }
+    .carousel-slider &, .variablewidth-slider & {
+      &.slick-active {
+      }
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+.slick-no-slide {
+  .slick-track {
+    width: 100% !important;
+    text-align: center;
+    transform: inherit !important;
+  }
+  .slick-slide {
+    float: none;
+    display: inline-block;
+  }
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+}
+.slick-dots {
+  text-align: center;
+  li {
+    display: inline-block;
+    button {
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      font-size: 0;
+      background-color: grey;
+      border-radius: 50%;
+      border: none;
+    }
+  }
+  .slick-active {
+    button {
+      background-color: black;
+    }
+  }
+}
+
+.slick-next {
+  right: 10px;
+  background: url("../assets/images/next-arrow.png") no-repeat 50% 50%;
+}
+.slick-arrow {
+  position: absolute;
+  top: 48%;
+  z-index: 1;
+  width: 15px;
+  height: 30px;
+  font-size: 0;
+  background-size: 100% 100%;
+}
+.slick-disabled {
+}
+.slide{
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+/*.slide__1999{
+  background: url(../images/slide1.jpg) no-repeat;
+  background-size: cover;
+}
+.slide__2000{
+  background: url(../images/slide2.jpg) no-repeat;
+  background-size: cover;
+}
+.slide__2003{
+  background: url(../images/slide3.jpg) no-repeat;
+  background-size: cover;
+}
+.slide__2005{
+  background: url(../images/slide4.jpg) no-repeat;
+  background-size: cover;
+}
+.slide__2010{
+  background: url(../images/slide5.jpg) no-repeat;
+  background-size: cover;
+}
+.slide__2012{
+  background: url(../images/slide6.jpg) no-repeat;
+  background-size: cover;
+}
+.slide__2013{
+  background: url(../images/slide7.jpg) no-repeat;
+  background-size: cover;
+}
+.slide__2015{
+  background: url(../images/slide8.jpg) no-repeat;
+  background-size: cover;
+}*/
+.slide__card{
+  position: absolute;
+  background-color: rgba(00,00,00,0.6);
+  color: #fff;
+  left: 5%;
+  bottom: 10%;
+  padding: 2rem;
+}
+.slick-dots{
+  position: absolute;
+  top: 11%;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  border-right: 3px solid #fff;
+  padding: 0;
+  line-height: 0;
+}
+.slick-dots li{
+  margin-top: 45px;
+  margin-right: -18px;
+}
+.slick-dots li:nth-child(1){
+  margin-top: -7px;
+}
+
+.slick-dots li button{
+    padding: 6px;
+  background: #fff;
+  font-size: 0;
+  border-radius: 50%;
+  margin-left: 12px;
+  outline: none;
+}
+.slick-dots li button:hover{
+  background-color: #B71D24;
+}
+.slick-dots .slick-active button{
+  background-color: #B71D24;
+  border: 10px solid rgba(255,255,255,0.9);
+  box-shadow: 0 0 0 0.5px #B71D24;
+}
+.slick-dots li:nth-child(1):before{
+  content:"1999";
+  font-size: 14px;
+  vertical-align: middle;
+  margin-top: 16px;
+  display: inline-block;
+  color: #fff;
+  opacity: 0.5;
+}
+.slick-dots li:nth-child(2):before{
+  content:"2000";
+  font-size: 14px;
+  vertical-align: middle;
+  margin-top: 7px;
+  display: inline-block;
+  color: #fff;
+  opacity: 0.5;
+}
+.slick-dots li:nth-child(3):before{
+  content:"2003";
+  font-size: 14px;
+  vertical-align: middle;
+  margin-top: 7px;
+  display: inline-block;
+  color: #fff;
+  opacity: 0.5;
+}
+.slick-dots li:nth-child(4):before{
+  content:"2005";
+  font-size: 14px;
+  vertical-align: middle;
+  margin-top: 7px;
+  display: inline-block;
+  color: #fff;
+  opacity: 0.5;
+}
+.slick-dots li:nth-child(5):before{
+  content:"2010";
+  font-size: 14px;
+  vertical-align: middle;
+  margin-top: 7px;
+  display: inline-block;
+  color: #fff;
+  opacity: 0.5;
+}
+.slick-dots li:nth-child(6):before{
+  content:"2012";
+  font-size: 14px;
+  vertical-align: middle;
+  margin-top: 7px;
+  display: inline-block;
+  color: #fff;
+  opacity: 0.5;
+}
+.slick-dots li:nth-child(7):before{
+  content: "2013";
+  font-size: 14px;
+  vertical-align: middle;
+  margin-top: 7px;
+  display: inline-block;
+  color: #fff;
+  opacity: 0.5;
+}
+.slick-dots li:nth-child(8):before{
+  content:"2015";
+  font-size: 14px;
+  vertical-align: middle;
+  margin-top: 7px;
+  display: inline-block;
+  color: #fff;
+  opacity: 0.7;
+}
+.slick-active:before{
+  opacity: 1 !important;
+}
+.slick-prev{
+  display: none;
+}
+
+/* ==========================================================================
+   Project css start here
+   ========================================================================== */
+.projects{
+  border: 1px solid rgba(0,0,0,0.2);
+  margin-bottom: 2px;
+}
+.upcoming-projects .title{
+  color: #384146;
+  font-size: 2.2rem;
+  padding-bottom: 0.8rem;
+  text-align: center;
+  font-size: 700;
+}
+.Project-row{
+  padding-top: 2rem;
+}
+.Project-row div{
+  padding: 0 2.2rem;
+}
+.project__commercial{
+  border-left: 1px solid rgba(0,0,0,0.2);
+  border-right: 1px solid rgba(0,0,0,0.2);
+}
+.Project-row .title{
+  color: #384146;
+  font-size: 1.25rem;
+  padding-bottom: 0.8rem;
+  text-align: center;
+  font-weight: normal;
+  margin:0; 
+}
+.Project__residential hr,
+.project__commercial hr,
+.project__hospitality hr{
+  background: #B82831;
+  width: 100%;
+  height: 1px;
+  margin-top: 0.7rem;
+}
+.Project-row ul{
+  list-style: circle;
+  margin-bottom: 2rem;  
+}
+.Project-row ul li{
+  color: #575858;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  margin-top: 0.7rem;
+}
+.complited-projects{
+  padding-top: 4rem;
+}
+/* ==========================================================================
+   Pravin css start here -> management team.
+   ========================================================================== */
+.rectangle {
+  display: flex;
+  justify-content: space-evenly;
+  transform: translate(129px, -140px);
+}
+.founder h3 {
+  font-size: 36px;
+  font-weight: normal;
+  font-family: HankenGrotesk;
+}
+.founder h3 ::after {
+  content: '';
+  width: 180px;
+  height: 2px;
+  border: solid 2px #a53130;
+}
+.managment-Team-heading h2 {
+  font-size: 42px;
+  color: #394247;
+  margin-bottom: 107px;
+}
+.info-content .heading {
+  color: #394247;
+  font-family: HankenGrotesk-bold;
+}
+.info-content {
+  text-align: center;
+  margin-top: 49px;
+}
+.subheading {
+  color: #394247;
+  line-height: 28px;
+  font-family: HankenGrotesk;
+  letter-spacing: 0.5px;
+  font-weight: 200;
+}
+.description {
+  font-size: 14px;
+  font-family: HankenGrotesk;
+  text-align: justify;
+  color: #394247;
+  margin: 15px 0 0 0;
+}
+.info-box {
+  box-shadow: 6px 6px 15px 0 rgba(221, 221, 221, 0.25),
+  -6px -6px 15px 0 rgba(221, 221, 221, 0.27); 
+  padding: 50px 30px;
+  transform: translate(49px, -155px);
+  background: #fff;
+}
+.title-heading h4{
+  font-size: 28px;
+  font-weight: 400;
+  font-family: HankenGrotesk-medium;
+}
+.founder-image {
+  width: 200px;
+  margin: 0 auto
+}
+.mt-140 {
+  margin-top: 140px;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+.mt-170 {
+  margin-bottom: 170px;
+}
+hr.bottom {
+  width: 78px;
+  border: solid 1px #a53130;
+  background: #a53130;
+  height: 1px;
+  margin-top: 26px;
+}
+.gray-background {
+  width: 994px;
+  height: 200px;
+  background: #FAFAFA;
+}
+.line {
+  width: 180px;
+  transform: translate(0px, -109px);
+}
+.mt-0 {
+  margin-top: 0;
+}
+/* ==========================================================================
+   Knowledge Hub css start here
+   ========================================================================== */
+.card {
+  border: none;
+  box-shadow: 9px 9px 22px 6px rgba(235, 235, 235, 0.5);
+  margin:35px 0;
+}
+.Knowledge-heading h2 {
+  font-size: 42px;
+  color: #394247;
+  font-family: HankenGrotesk-bold;
+  margin-bottom: 33px;
+}
+.Knowledge-hub-description p {
+  font-size: 14px;
+  color: #394247;
+  font-family: HankenGrotesk;
+  margin-bottom: 10px;
+}
+.card-text {
+  color: #374248;
+  font-family: HankenGrotesk-Medium;
+}
+.Knowledge-date {
+  color: #979797;
+  font-family: HankenGrotesk;
+  margin: 0;  
+}
+.knowledge-hub-images {
+ margin:0 20px;
+}
+.knowledge-hub-wrapper {
+  padding: 0 1rem;
+}
+.residential-wrapper .arrow img {
+  width: 34px;
+}
+/* ==========================================================================
+   Residential Real Estate css start here
+   ========================================================================== */
+.estate .residential-card {
+  position: absolute;
+  bottom: -31px;
+  left: 7%;
+  width: 339px;
+  box-shadow: 6px 6px 13px 0 rgba(227, 227, 227, 0.76);
+  margin: 0 auto;
+  border-radius:unset;
+}
+.estate {
+  position: relative;
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+.estate .card-title {
+  font-family: HankenGrotesk-Medium;
+  color: #374248;
+}
+.estate .card-text {
+  font-size: 12px;
+   font-family: HankenGrotesk;
+   margin-bottom: 55px;
+}
+ .estate .residential-card-body{
+   padding: 25px 34px 25px 34px
+  }  
+.residential-description {
+  font-size: 14px;
+  color: #394247;
+  font-family: HankenGrotesk;
+  margin-bottom: 10px;
+}
+.residential-heading {
+  padding:0 1rem;
+}
+.residential-heading h2 {
+ font-size: 42px;
+ color: #394247;
+ font-family: HankenGrotesk-bold;
+ margin-bottom: 33px;
+}
+.residential-images {
+  margin: 0 20px;
+}
+/* ==========================================================================
+   Footer css start here
+   ========================================================================== */
+footer{
+  background: #374248;
+  color: #fff;
+  padding: 5rem 0 3rem; 
+  text-align: center;
+  margin-top: 36px;
+}
+footer hr{
+  background: #98A1A8;
+  width: 46%;
+  height: 1px;
+  margin: 0.7rem auto;  
+}
+.footer-nav a{
+  color: #fff;
+}
+.social-links a{
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 8px;
+  margin: 0 10px;
+}
+.social-links a i{
+  color: #374248;
+  font-size: 0.9rem;
+}
+.social-links a:hover i{
+  color: #B82831;
+  font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   Media Qurery start here
+   ========================================================================== */
+@media screen and (max-width:1200px) {
+  /*Management Team*/
+  .gray-background {
+    width:93%;
+  }
+  .info-box {
+    transform: translate(77px, -155px);
+  }
+  .line {
+    width: 170px;
+  }
+  .mt-170 {
+    margin-bottom: 120px;
+  }
+  /*Residential Real Estate*/
+  .estate .residential-card {
+    width:auto;
+    right: 22px;
+  }
+}
+@media screen and (max-width:992px){
+/*Management Team*/
+  .gray-background {
+    width:100%;
+  }
+  .line {
+    width: 130px;
+  }
+  .rectangle {
+    transform: translate(133px, -140px);
+  }
+  .info-box {
+    transform: translate(110px, -155px);
+  }
+  .mt-170 {
+    margin-bottom: 70px;
+  }
+  .mt-140 {
+    margin-top: 70px;
+  }
+  /*Residential Real Estate*/
+  .estate .card-title {
+    font-size: 19px;
+  }
+  .estate .residential-card-body {
+    padding: 10px 15px;
+  }
+  .estate .card-text {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width:768px) {
+  /*Management Team*/
+  .Knowledge-heading h2 {
+    font-size: 30px;
+  }
+  .rectangle {
+    transform: translate(0, -140px);
+    margin-left: 100px;
+  }
+  .info-box {
+    transform: none;
+    margin-bottom: 60px;
+  }
+  .member {
+    margin-bottom: 60px;
+  }
+  footer {
+    margin-top: 0;
+  }
+  .mt-170 {
+    margin-bottom: 60px;
+  }
+  .mt-140 {
+    margin-top: 30px;3
+  }
+  .mb-0 {
+    margin-bottom: 0;
+  }
+  .managment-Team-heading h2 {
+    margin-bottom: 50px;
+  }
+  /*Residential Real Estate*/
+  .residential-heading h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width:600px) {
+  /*Management Team*/
+  .knowledge-hub-images {
+    margin: 0;
+  }
+  .line {
+    display: none;
+  }
+  .rectangle {
+    margin: 0;
+  }
+   /*Residential Real Estate*/
+  .estate .residential-card-body {
+    padding: 25px 30px;
+  }
+}
+@media screen and (max-width:400px) {
+  /*Management Team*/
+  .gray-background,
+  .founder {
+      display: none;
+  }
+  .rectangle {
+    transform: none;
+    margin-bottom: 40px;
+  }
+}
